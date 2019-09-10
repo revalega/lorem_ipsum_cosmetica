@@ -1,0 +1,2058 @@
+
+/* Importamos la librería bootstrap*/
+@import url('bootstrap.css');
+
+
+/*Importamos las fuentes*/
+@import url('https://fonts.googleapis.com/css?family=Muli|Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans|Reenie+Beanie&display=swap');
+/* Importamos los iconos */
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
+
+
+/* --------------------------------------------------------------------------------- GENERALES */
+* {
+  box-sizing: border-box;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+  font-family: 'Muli','Titillium Web', sans-serif;
+  display:flex;
+  min-height:100vh;
+  flex-direction:column;
+}
+
+.content {
+  flex:1;
+}
+
+
+/* El contenedor que no va a ir al borde y contiene información tiene que
+tener estas caracteristics col-12 col-md-11 col-xl-10 */
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.form-control {
+  border-radius: 0;
+  border-color: #000;
+}
+
+.form-control:focus {
+  border-color: grey;
+  box-shadow: 0 0 0 0.2rem #E0B9E3;
+}
+
+/* ------------------  Titulo principal ------------------  */
+h1{
+    font-family: 'Reenie Beanie', cursive;
+    text-align: center;
+    font-size: 5em;
+    line-height: 0.8em;
+    margin-top: 10px;
+
+
+}
+
+ .title h1{
+text-align: left;
+margin-right: 100px;
+}
+
+.tit-productos-cat {
+  text-align: center;
+  line-height: 0.6em;
+  margin-top: 0.6em;
+  margin-bottom: 0;
+  color:silver;
+  padding-bottom:0;
+}
+
+.tit-productos-subcat {
+  text-align: center;
+  color:black;
+  line-height: 0.6em;
+}
+
+.tit-productos {
+    text-align: center;
+    line-height: 1em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+
+.punto {
+  display: none;
+}
+
+
+/*------------------  Para titulos y banners especial. Tipografía manuscritos ------------------ */
+
+h2.titseccion {
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 6em;
+}
+
+/* ------------------  Subtitulos ------------------   */
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* ------------------  Nombre de productos ------------------  */
+
+h4 {
+  font-size: 1.5em;
+}
+
+.bg-dark {
+  background-color: #000 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 1);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ------------------ Estilo de Botones ------------------ */
+.btn {
+  text-transform: uppercase;
+  border-radius: 0rem;
+}
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #666;
+  border-color: #666;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #666;
+  border-color: #666;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #666;
+  border-color: #666;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-secondary {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+}
+
+.btn-secondary:hover {
+  color: #666;
+  background-color: #fff;
+  border-color: #666;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #545b62;
+  border-color: #4e555b;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+
+.btn-info {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.btn-info:hover {
+  color: #f9f9f9;
+  background-color: transparent;
+  border-color: #f9f9f9;
+}
+
+.btn-info:focus, .btn-info.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.btn-info.disabled, .btn-info:disabled {
+  color: #f9f9f9;
+  background-color: transparent;
+  border-color: #f9f9f9;
+}
+
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
+.show > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #117a8b;
+  border-color: #10707f;
+}
+
+
+.btn-light {
+  color: #666;
+  background-color: #fff;
+  font-size: 0.8em;
+  padding: 10px 8px 8px 8px;
+  /* margin: 0.5em; */
+}
+
+.btn-light:hover {
+  color: #000;
+  background-color: #fff;
+}
+/*
+.dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0rem;
+   box-shadow: 0px 2px 2px #ccc;
+}*/
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline: transparent;
+}
+
+/*--------------------------------------------------------------------------------img 404ERROR*/
+.tomGif{
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------  INDEX */
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 50%;
+}
+
+.carousel-caption h3{
+  font-family: "Muli", sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 30px;
+  color: black;
+
+}
+
+
+.carousel-caption p{
+  font-family: "Titillium", sans-serif;
+  font-size: 20px;
+  color: black;
+  background-color:rgba(255, 255, 255, 0.5);
+  text-align: center;
+
+}
+.wide{
+  display: none;
+}
+
+.quienessomos {
+  padding: 20px;
+  margin: 20px;
+}
+
+.about{
+    margin-top: 0.2em;
+    margin-bottom: 0em;
+    font-size:5em;
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+.aboutsub{
+    margin-top: 0.2em;
+    margin-bottom: 0em;
+    font-size:4em;
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+.aboutp{
+  font-size: 1em;
+  margin-left: 20px;
+  margin-top: 0em;
+  text-align: left;
+  margin-right: 20px;
+}
+/*hasta aca va el estilo del index*/
+
+/* --------------------------------------------------------------------------------- ERRORES EN LOGIN Y REGISTER */
+
+.alert-danger {
+  border-radius: 0;
+  color:#BD3131;
+  background-color: #F7DFDC;
+  font-weight: bold;
+}
+
+.invalid {
+  border-radius: 0;
+  color:#BD3131;
+  background-color: #F7DFDC;
+  font-weight: bold;
+  padding: 5px 12px;
+  display:none;
+}
+
+.erroravatar {
+  margin-top:0;
+}
+
+.errorPass {
+  flex-direction:column;
+}
+
+/* --------------------------------------------------------------------------------- PRODUCTOS */
+.row-sin-margen {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.btnHeart{
+  background: none;
+  border: none;
+  padding:0;
+  width: auto;
+}
+
+
+.encabezado {
+  background-color: #F9F7F7;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.imgbanner {
+  width: 100%;
+}
+
+
+.banner-seccion-producto {
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+  width: 100%;
+}
+
+h2.titseccion {
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 8em;
+
+}
+
+
+/* LISTADO PRODUCTOS */
+
+.listado-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.col-producto {
+  display: flex;
+  justify-content: center;
+}
+
+.producto-detallado {
+  margin-bottom: 20px;
+}
+
+.producto {
+  padding: 0;
+  border-radius: 0;
+  margin: 10px 0 10px 0;
+  border: 1px solid black;
+  width: 100%;
+
+}
+/* CARD BODY */
+.encabezado-producto {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nombre-producto {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+.corazon {
+  font-size: 2em;
+  color: #000;
+  padding-left: 10px;
+}
+
+/* ------------------------------------------------------------------------------- DETALLE PRODUCTOS */
+
+.detalle-producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.boton-detalle {
+  margin-top: 10px;
+}
+
+.nombre-producto-detalle {
+  font-size: 2em;
+}
+
+.detalle {
+  padding: 20px;
+  border-top: 1px solid rgba(0,0,0,.125);
+  background-color: #F9F7F7;
+}
+
+.breadcrumb {
+  border-radius: 0;
+  background-color: #FFF;
+  margin-bottom: 0;
+  padding: 20px 0 5px;
+}
+
+.breadcrumb-item a{
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.presentacion {
+  list-style: square inside;
+}
+
+.btn-link {
+  text-decoration: none;
+  padding-left: 0;
+  color: #000;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  padding-left: 0;
+  color: #000;
+  font-weight: bolder;
+}
+
+
+/* --------------------------------------------------------------------------------- LOGIN */
+.container {
+  padding: 20px;
+
+}
+.mainContainer{
+  display: flex;
+  justify-content: center;
+}
+/* ------------------  Style Formulario ------------------  */
+form {
+  align-self: center;
+  margin: 10px 0;
+}
+
+/* ------------------  inputs en formuario  ------------------  */
+input[type=text], input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.psw {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+}
+
+.reg {
+  font-size: 0.8em;
+  background-color: #E2E2E2;
+  border-color: #CCCCCC;
+  padding: 10px;
+  letter-spacing: 0.25em;
+}
+
+.custom-select {
+  margin-bottom: 20px;
+  border-radius: 0;
+  border: 1px solid #000000;
+}
+
+/* ------------------  Botones en formulario ------------------  */
+.btnForm{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0px;
+
+}
+
+form button{
+  padding: 0.5em 2em;
+}
+
+/* --------------------------------------------------------------------------------- REGISTER */
+
+.containerRegister{
+  display: block;
+}
+
+.col-form-label {
+  padding-right: 0px;
+}
+
+.terminos {
+  color: dodgerblue;
+}
+
+.copete {
+  text-align: center;
+}
+
+/* ------------------  Style Imagen en formulario ------------------  */
+.imgcontainer {
+  text-align: center;
+  margin: 12px 0 12px 0;
+}
+
+img.avatar {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.imgtexto {
+  color: #000;
+  background-color: rgba(255,255,255,0.5);
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imgError {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.avatarContainerRegister {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.pointer {
+  cursor:pointer;
+}
+
+/* ------------------  Style Switch ------------------  */
+
+.containerSwitch{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.containerUnSwitchCat{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.containerUnSwitchNot{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switchTextCat{
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 0.8em;
+  padding: 2px 10px;
+
+}
+
+.switchTextNoticias{
+  margin-left: 10px;
+  line-height: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.8em;
+  transform: translateY(-10%);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* ---------------- Rounded sliders ---------------- */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.selectProvince {
+  display:none;
+  flex-direction: column;
+}
+
+.selectProvinceReg {
+  flex-direction: row;
+}
+
+/* --------------------------------------------------------------------------------- PROFILE */
+.imgContainerProfile {
+  text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+  margin:0;
+}
+
+
+.imgContainerProfile .imgPerfil{
+  width: 200px;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+  margin:10px 0 0 0;
+}
+
+.imgContainerProfile .imgPerfil img{
+  display: block;
+  height: 100%;
+  /*min-height: 200px!important;
+  min-width: 200px!important;*/
+  left: 50%;
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translateX(-50%, -50%);
+  position: absolute;
+  /*clip-path: circle(200px at center);
+  -webkit-clip-path: circle(200px at center);*/
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  /*min-width: 250px;
+  min-height: 200px;*/
+
+}
+
+
+.containerAside{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerUnSwitchProfile, .containerUnSwitch{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+}
+
+
+
+.profile .btnForm button{
+  padding: 14px 20px;
+  width: 100%;
+}
+
+.tituloCardFav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.fav-img {
+  width: 100%;
+}
+
+.fav-title{
+  font-size: 17px;
+}
+.buttonsCard{
+}
+.tituloCardFav .corazon{
+    align-self: center;
+}
+.card-title{
+  text-align: center;
+}
+
+.switchTextPerfil{
+  margin-left: 10px;
+}
+
+.log-out {
+  color: #CCC;
+  border-color: #CCC;
+}
+
+.favProfile{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.favProduct{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.favProduct div{
+  text-align: center;
+}
+
+.favProduct img{
+  width: 60%;
+}
+
+/* --------------------------------------------------------------------------------- HEADER */
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+/* DROPDOWN SUBMENU*/
+
+.menu-categorias {
+  background-color: rgba(51, 51, 51, 0.85);
+  color: #FFF;
+}
+
+.menu-subcategorias {
+  background-color: rgba(40, 40, 41, 0.25);
+  color: #FFF;
+}
+
+.menu-subcategorias li {
+  border-top: solid 0.5px rgba(40, 40, 41, 0.25);
+  padding: 6px;
+}
+
+.menu-subcategorias li:first-child {
+  border-top: none;
+}
+
+.dropdown-item-sub {
+  text-transform: none;
+  font-size: 0.8em;
+  font-weight: bold;
+
+}
+
+.dropdown-submenu {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+
+.dropdown-item-cat {
+  color: #FFF;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #606060;
+  font-weight: bold;
+}
+
+
+.mainHeader{
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.clmPerfilOrig{
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  color: #fff;
+  justify-content: space-between!important;
+}
+
+.clmPerfil{
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+  justify-content: space-between!important;
+  padding: 15px 20px;
+}
+
+.buscador {
+  display: fixed;
+  bottom: 0;
+  left:0;
+}
+
+.perfilHeader .img img{
+  display: none;
+}
+
+.perfilMobile {
+    border-top: 1px solid #333;
+    background: #222;
+    padding: 7px 0;
+    color:#fff;
+}
+
+.dropdown-menu {
+    text-align: center!important;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0rem;
+}
+
+.menu-products {
+    text-align: left!important;
+}
+
+.searchHeader{
+  display: none;
+
+}
+
+.searchHeader .form-control{
+  border-radius: 0px;
+  margin: 0;
+}
+
+.searchHeader .input {
+  border: none!important;
+}
+
+.navbar-toggler{
+  margin: 10px auto;
+  border: none;
+}
+
+.navbar-brand {
+  width:100%;
+  margin-right: 0;
+  font-size: 3em;
+  text-align: center!important;
+  padding: 0;
+}
+
+.navbar-brand img{
+  width: 60%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+}
+.navbar-nav {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0!important;
+}
+.dropdown-menu {
+    border: none;
+    border-radius: 0rem;
+    box-shadow: 0px;
+}
+
+/* --------------------------------------------------------------------------------- FAQ */
+
+.mt-4{
+margin-top: 0.2em;
+margin-bottom: 0em;
+    font-size:5em;
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+.mainFaqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.mainFaqs .btn-link {
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.mainFaqs .btn-link:hover {
+  color: #f9f9f9;
+  text-decoration: underline;
+}
+
+.mainFaqs .btn-link:focus, .btn-link.focus {
+  text-decoration: none;
+  box-shadow: none;
+  color: #ccc;
+}
+
+#accordionDesktop{
+  display: none;
+}
+
+.mainFaqs .card {
+  background-color: #fff;
+  background-clip: border-box;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 0;
+}
+
+.mainFaqs .card-header {
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}
+
+/* --------------------------------------------------------------------------------- EN CONSTRUCCION */
+
+.mainConstrucccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* --------------------------------------------------------------------------------- FOOTER */
+
+footer{
+  background: #666;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 0.7rem;
+}
+
+footer h2{
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+footer .mainFooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #fff;
+  bottom: 0;
+}
+
+footer a{
+  color: #fff!important;
+}
+
+footer a:hover{
+  color:#ccc;
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------------  ADMIN VIEWS MOBile*/
+/* Index admin */
+.adminConteiner{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.btnAddProd{
+  align-self: flex-end;
+  color: white;
+}
+.btnSubCat{
+  width: 100%;
+  text-align: left;
+}
+.theDeleteBtn{
+  border: none;
+  margin: 0px;
+  flex-direction: row;
+  display: none;
+  justify-content: center;
+}
+.theDeleteBtn button{
+  width: auto;
+}
+.btnEdit{
+  text-align: center;
+}
+.adminBrief{
+  display: none;
+}
+.modal form{
+  padding: 10px;
+  border:none;
+}
+.card-body{
+  padding: 10px;
+}
+
+/* Edit admin */
+.editAdminMainConteiner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.editAdminConteiner{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.theEditForm{
+  padding: 10px;
+}
+.imgFormGroup{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom:20px;
+}
+.form-group{
+  width: 100%;
+}
+.mrgMob{
+  margin-bottom: 10px;
+}
+.imgMob{
+  width: 100px;
+}
+
+#trash {
+  align-self:flex-end;
+  font-size: 1.2em;
+  position: relative;
+  top: -20px;
+  right: -5px;
+}
+.imgToDelete{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  width: auto;
+  margin-right: 10px;
+}
+
+#btnImgAdd{
+  background: none;
+  border: none;
+  padding:0;
+}
+.row{
+  justify-content: center;
+}
+.rowImg{
+  justify-content: center;
+}
+
+
+/* ADD admin */
+.conteinerAdd{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+}
+.conteinerAdd form{
+  padding: 10px;
+}
+.ButtonsAdd{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.mobileAddPop{
+  width: 95vw;
+}
+.btnDiv{
+  display: flex;
+  justify-content:flex-end;
+}
+#rowImg {
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+#btnImgAdd{
+  background: none;
+  border: none;
+  padding:0;
+  width: auto;
+}
+#btnImgAdd i{
+  font-size:2em;
+}
+/* --------------------------------------------------------------------------------- MEDIA QUERYs */
+/* Phones Landscape */
+@media (min-width:480px){
+  /* --------------------------------------------------------------------------------- PRODUCTS */
+
+
+  /* --------------------------------------------------------------------------------- HEADER */
+  .mainHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .clmLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  .clmPerfil{
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #fff;
+    justify-content: space-between!important;
+    padding: 15px 20px;
+  }
+
+  .navbar-toggler{
+    margin: 20px 0 0 0;
+    border: none;
+  }
+
+  .navbar {
+      align-items: normal!important;
+  }
+
+  .navbar-nav {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 20px;
+  }
+
+  .navbar-brand img{
+    width: 70%;
+  }
+
+  /*---------------INDEX----------------------------------------------------------------------*/
+  .about{
+    margin-top: 0.2em;
+    margin-left: 55px;
+    font-size:5em;
+    text-align: left;
+    font-family: 'Reenie Beanie', cursive;
+    }
+
+  .aboutsub{
+      margin-top: 0.2em;
+      margin-bottom: 0em;
+      font-size:4em;
+      text-align: center;
+      font-family: 'Reenie Beanie', cursive;
+    }
+
+  .aboutp{
+    margin-left: 55px;
+    margin-right: 55px;
+    font-size: 1.2em;
+  }
+
+  .wide{
+    display: none;
+  }
+/*hasta aca va el estilo del index*/
+
+/*--------------------------------------------------------------------------------img 404ERROR*/
+.tomGif{
+  width: 100%;
+}
+
+
+
+  /* --------------------------------------------------------------------------------- FOOTER */
+
+  /* ---------------------------------------------------------------------------------  ADMIN VIEWS phone lands */
+  /* Add admin */
+  .mobileAddPop{
+    width: none;
+  }
+
+  .tit-productos-cat {
+    text-align: center;
+  }
+
+  .theDeleteBtn{
+    display: flex;
+  }
+
+  /* ---------------------------------------------------------------------------------  REGISTER */
+
+.titulo {
+  text-align: left;
+}
+
+.copete {
+  text-align: left;
+}
+
+/* Tablets */
+@media (min-width:768px){
+
+
+
+  /* --------------------------------------------------------------------------------- Log_in */
+
+  .mainContainer {
+    margin: 10px 0;
+  }
+  /* --------------------------------------------------------------------------------- Register */
+
+  .containerRegister{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .containerUnSwitchCat{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: left;
+    font-size: 16px;
+  }
+
+  .switchText{
+    margin-left: 10px;
+    line-height: 2em;
+  }
+
+
+
+  .imgtexto {
+    color: #000;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* --------------------------------------------------------------------------------- Perfil */
+  .containerProfile{
+    display: flex;
+    justify-content: center;
+  }
+
+  .imgContainerProfile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .imgContainerProfile label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgContainerProfile .imgPerfil{
+  width: 150px;
+  min-height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+  margin:10px 0 0 0;
+}
+
+
+
+  .imgContainerProfile img.avatar{
+    width: 40%;
+  }
+
+  img.avatar {
+      width: 100%;
+  }
+
+  .log-out {
+    border: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+    text-align: right;
+    width: auto;
+  }
+
+  .btnLogOut {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+.favProduct{
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.favProduct div{
+  text-align: left;
+}
+
+.favProduct img{
+  width: 60%;
+}
+
+.favProduct p{
+  font-size: 13px;
+}
+
+  /* --------------------------------------------------------------------------------- HEADER */
+
+    .clmLogo{
+      padding: 15px 0 0 0;
+    }
+
+    .clmPerfilOrig{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      justify-content: space-between!important;
+    }
+
+    .clmPerfil{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      color: #fff;
+      justify-content: space-between;
+      padding: 15px 0px;
+    }
+
+
+  .perfilMobile{
+    display: none;
+  }
+
+
+
+    .searchHeader .form-control{
+      border-radius: 0px;
+      margin: 0;
+      background: transparent;
+      border:none;
+      border-bottom: 1px solid #fff;
+    }
+
+  .searchHeader .btn-info{
+    width: auto!important;
+    border:none;
+  }
+
+    .perfilHeader{
+      /* width: 100%; */
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .perfilHeader img{
+      display: none;
+    }
+
+    .mainHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+    .navbar-brand {
+    text-align: left!important;
+    }
+
+    .navbar-brand img{
+      width: 100%;
+    }
+
+    .navbar-nav {
+      -ms-flex-direction: row;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+    .navbar-expand-md .navbar-collapse {
+        justify-content: flex-end;
+
+    }
+
+    .navbar-toggler{
+      margin: 20px 0 0 0;
+      border: none;
+    }
+
+    .dropdown-submenu a::after {
+      transform: rotate(-90deg);
+    }
+
+    .dropdown-submenu {
+      text-align: left;
+      padding-left: 5px;
+    }
+
+    .menu-categorias {
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    .menu-subcategorias {
+      background-color: rgba(40, 40, 41, 0.95);
+      color: #FFF;
+    }
+
+    .dropdown-menu li {
+      padding:5px;
+      text-align: left;
+    }
+
+    .dropdown-item-sub {
+      text-align: left;
+    }
+
+    .dropdown-menu-sub {
+      background-color:
+    }
+  /*
+    .navbar-expand-md {
+      -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  }
+*/
+
+/* --------------------------------------------------------------------------------- PRODUCTOS */
+
+  .banner-seccion-producto {
+    display: none;
+  }
+
+  .col-md-6 {
+    display:flex;
+  }
+
+  .row-sin-margen {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .tit-productos-cat {
+    display:inline-block;
+    margin-bottom: 0.6em;
+  }
+
+  .tit-productos-subcat {
+    display:inline-block;
+    margin-bottom: 0.6em;
+
+  }
+
+  .punto {
+      display:inline-block;
+
+  }
+
+  .tit-productos {
+    text-align: left;
+  }
+
+/* --------------------------------------------------------------------------------- FOOTER */
+.about{
+    margin-top: 0.2em;
+    margin-bottom: 0em;
+    font-size:5em;
+    margin-left: 55px;
+    text-align: left;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+.aboutsub{
+    margin-top: 0.2em;
+    margin-bottom: 0em;
+    font-size:4em;
+    text-align: center;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+  .aboutp{
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 0em;
+    font-size: 1.2em;
+  }
+
+.wide{
+  display: none;
+}
+
+.rowImg{
+  justify-content: flex-start;
+}
+
+.card-body{
+  padding: 1.25rem;
+}
+
+/*----------------------INDEX--------------------------------------------/*
+
+/*--------------------------------------------------------------------------------img 404ERROR*/
+.tomGif{
+  width: 100%;
+}
+
+
+}
+/* Desktops */
+@media (min-width:992px){
+  h3 {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.8em;
+  }
+  .quienessomos {
+    margin: 20px 200px;
+    padding: 50px;
+  }
+
+  .about{
+      margin-top: 0.2em;
+      margin-bottom: 0em;
+      font-size:5em;
+      text-align: center;
+      font-family: 'Reenie Beanie', cursive;
+  }
+
+  .aboutsub{
+      margin-top: 0.2em;
+      margin-bottom: 0em;
+      font-size:4em;
+      text-align: center;
+      font-family: 'Reenie Beanie', cursive;
+  }
+
+    .aboutp{
+      margin-left: 55px;
+      margin-right: 55px;
+      margin-top: 0em;
+      font-size: 1.2em;
+      text-align: center;
+    }
+  .wide{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+
+   .modal-lg,
+  .modal-xl {
+    max-width: 600px;
+  }
+
+
+  /*--------------------------------------------------------------------------------img 404ERROR*/
+  .tomGif img{
+    width: 100%important!;
+  }
+/* --------------------------------------------------------------------------------- LOG IN */
+
+form button{
+  width: 100%
+}
+
+form button.volver{
+  display: none;
+}
+
+/* --------------------------------------------------------------------------------- Register */
+/* .imgtexto {
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+} */
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+}
+
+.switchTextPerfil{
+  margin-left: 11px!important;
+}
+
+.containerUnSwitchProfile{
+
+  font-size: 14px;
+}
+/* --------------------------------------------------------------------------------- HEADER */
+
+.mainHeader {
+    justify-content: space-between;
+}
+
+.navbar-brand {
+  width:auto;
+  margin-right: 0;
+  text-align: left;
+}
+
+.navbar-brand img{
+  width: 70%;
+}
+
+.clmLogo{
+  padding: 10px 0 0 0;
+}
+
+.clmPerfilOrig{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  justify-content: flex-end!important;
+  padding: 0;
+}
+
+.clmPerfil {
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    padding: 10px 0;
+ }
+
+.perfilHeader {
+  padding: 2px 8px;
+}
+
+.perfilHeader .avatar{
+  margin: 20px auto;
+  display: block;
+  width: 100%;
+  height: 400px;
+  -webkit-mask: 50%;
+  mask: 50%;
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+}
+
+.perfilHeader .img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50px;
+  min-height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+  margin:0 0 0 10px;
+}
+
+.perfilHeader .img img{
+  clip-path: circle(125px at center);
+  -webkit-clip-path: circle( at center);
+  display: block;
+  width: 100%;
+  min-width: 70px;
+  min-height: 70px;
+  /*left: 50%;
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translateX(-50%, -50%);*/
+  position: absolute;
+}
+
+ .searchHeader {
+      display: flex;
+
+    }
+
+.navbar-expand-md .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.dropdown-menu {
+
+    box-shadow: 0px 2px 2px #ccc;
+}
+/* --------------------------------------------------------------------------------- En Construccion */
+
+  .mainConstruccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: url("../imgs/img-construccion.jpg") center center;
+    background-size: cover;
+    color: #fff;
+    min-height: 60vh; /* solución temporal - corregir posición footer - */
+  }
+
+
+/* --------------------------------------------------------------------------------- FAQS */
+
+  .mainFaqs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: url("../imgs/faqs.jpg") center center;
+    background-size: cover;
+    color: #fff;
+  }
+
+  .mainFaqs .btn-link {
+      text-align: left;
+  }
+
+  #accordionMobile{
+    display: none;
+  }
+
+  .faqDesktop{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #accordionDesktop{
+    display: flex;
+    width: 100%;
+  }
+
+  .faqs-preguntas, .faqs-rtas{
+    display: block;
+    width: 48%;
+  }
+
+  .mainFaqs .card {
+    background-color: rgba(255, 255, 255, 0);;
+    background-clip: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 0;
+  }
+
+  .mainFaqs .card-header {
+    padding: 0.5rem 0.75rem;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    text-align: left;
+  }
+
+  .card-header {
+    padding: 0.05rem 1.25rem;
+  }
+
+  /* --------------------------------------------------------------------------------- FOOTER */
+
+
+    footer .mainFooter{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: flex-start;
+      width: 100%;
+      font-size: 0.9rem;
+    }
+/* ---------------------------------------------------------------------------------  ADMIN VIEWS DESKTOPS */
+/* Index admin */
+    .adminBrief{
+      display: table-cell;
+    }
+    /* Edit admin */
+    .mrgMob{
+      margin-bottom: 0px;
+    }
+    .imgMob{
+      display: block;
+    }
+    .ButtonsAdd{
+      margin-right: 10px;
+    }
+
+/* ADD admin */
+    .conteinerButtonsAdd{
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+    }
+
+}
+/* Widescreen */
+@media (min-width:1200px){
+
+/*INDEX-----------------------------------------------------------------------*/
+  h1 .title{
+      font-family: 'Reenie Beanie', cursive;
+      text-align: center;
+      font-size: 5em;
+      line-height: 0.8em;
+      margin-top: 10px;
+
+}
+
+
+  .about{
+      margin-top: 0.2em;
+      margin-bottom: 0em;
+      font-size:5em;
+      text-align: center;
+      font-family: 'Reenie Beanie', cursive;
+  }
+
+  .aboutsub{
+      margin-top: 0.2em;
+      margin-bottom: 0em;
+      font-size:4em;
+      text-align: center;
+      font-family: 'Reenie Beanie', cursive;
+  }
+
+    .aboutp{
+      margin-left: 55px;
+      margin-right: 55px;
+      margin-top: 0em;
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    .wide{
+      display: block;
+    }
+    .mobile{
+      display: none;
+    }
+
+    .favProduct img{
+  width: 90%;
+}
+
+}
+
+/*--------------------------------------------------------------------------------img 404ERROR*/
+.tomGif img{
+  width: 100%important!;
+}
